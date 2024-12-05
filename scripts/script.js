@@ -18,6 +18,9 @@ let computerScore = 0;
 let round = 0;
 
 function startGame() {
+  userImg.src="Resources/cardB.jpg";
+  computerImg.src="Resources/cardB.jpg";
+
   const username = document.getElementById('username').value.trim();
   if (username === "") {
       alert("Будь ласка, введіть ваше ім'я!");
