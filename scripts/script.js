@@ -13,9 +13,6 @@ const userImg = document.getElementById("UserCard");
 const computerImg = document.getElementById("ComputerCard");
 const cards = Object.keys(cardValues);
 
-userImg.src="Resources/cardB.jpg";
-computerImg.src="Resources/cardB.jpg";
-
 let userScore = 0;
 let computerScore = 0;
 let round = 0;
