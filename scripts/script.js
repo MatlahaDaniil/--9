@@ -13,6 +13,9 @@ const userImg = document.getElementById("UserCard");
 const computerImg = document.getElementById("ComputerCard");
 const cards = Object.keys(cardValues);
 
+userImg.src="Resources/cardB.jpg";
+computerImg.src="Resources/cardB.jpg";
+
 let userScore = 0;
 let computerScore = 0;
 let round = 0;
@@ -113,78 +116,3 @@ function stopGame(){
     CheckEnd();
   }
 }
-// const cardValues = {
-//   "6x": 6,
-//   "6b": 6,
-//   "6p": 6,
-//   "6c": 6,
-//   "7x": 7,
-//   "7b": 7,
-//   "7p": 7,
-//   "7c": 7,
-//   "8x": 8,
-//   "8b": 8,
-//   "8p": 8,
-//   "8c": 8,
-//   "9x": 9,
-//   "9b": 9,
-//   "9p": 9,
-//   "9c": 9,
-//   "10x": 10,
-//   "10b": 10,
-//   "10p": 10,
-//   "10c": 10,
-//   'Jx': 2,
-//   'Jb': 2,
-//   'Jp': 2,
-//   'Jc': 2,
-//   'Qx': 3,
-//   'Qb': 3,
-//   'Qp': 3,
-//   'Qc': 3,
-//   'Kx': 4,
-//   'Kb': 4,
-//   'Kp': 4,
-//   'Kc': 4,
-//   'Ax': 11,
-//   'Ab': 11,
-//   'Ap': 11,
-//   'Ac': 11
-// };
-// const cards = Object.keys(cardValues);
-
-// let userScore = 0;
-// let computerScore = 0;
-// let rounds = 0;
-
-// const img = document.getElementById("card");
-
-// document.getElementById("generateBtn").addEventListener("click", () => {
-//   if (rounds < 3) {
-//       const userCard = cards[Math.floor(Math.random() * cards.length)];
-//       const computerCard = cards[Math.floor(Math.random() * cards.length)];
-      
-//       userScore += cardValues[userCard];
-//       computerScore += cardValues[computerCard];
-      
-//       document.getElementById("userCard").innerText = `User Card: ${userCard}`;
-//       img.src="Resources/" + userCard + ".jpg";
-//       document.getElementById("userScore").innerText = `User: ${userScore}`;
-      
-//       rounds++;
-
-//       if (rounds === 3) {
-//           const resultMessage = ((userScore > computerScore && userScore < 21) || userScore === 21) ? "User win!" : "Computer win!";
-//           document.getElementById("result").innerText = resultMessage;
-//           document.getElementById("generateBtn").disabled = true;
-//       }
-//   }
-// });
-
-// document.getElementById("stopBtn").addEventListener("click", () => {
-//   if (rounds < 3) {
-//     const resultMessage = ((userScore > computerScore && userScore < 21) || userScore === 21) ? "User win!" : "Computer win!";
-//     document.getElementById("result").innerText = resultMessage;
-//     document.getElementById("generateBtn").disabled = true;
-//   }
-// });
